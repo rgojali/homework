@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>HELLO</title>
-  </head>
-  <body style="background-color: lightgoldenrodyellow;">
+</head>
+
+<body style="background-color: lightgoldenrodyellow;">
     <p style="color:green;  font-size:46px;">
-      It's super <strong>Super Rutastic</strong> here reporting for duty!
+        It's super <strong>Super Rutastic</strong> here reporting for duty!
     </p>
 
     <h2>
         To Contact Super Rutastic
-        </h2>
-        
-        <table style="width:100%">
-          <tr>
+    </h2>
+
+    <table style="width:100%">
+        <tr>
             <th align="left">Name</th>
             <th align="left">Phone Number</th>
-          </tr>
-          <tr>
-            <td>Rusilah Gojali</td> 
+        </tr>
+        <tr>
+            <td>Rusilah Gojali</td>
             <td>(206) 902-0262</td>
-          </tr>
-          <tr>
-            <td>Maramy Mohamathno</td>   
+        </tr>
+        <tr>
+            <td>Maramy Mohamathno</td>
             <td>(206) 349-3363</td>
-          </tr>
-        </table>
+        </tr>
+    </table>
 
-  </body>
+    <h2>Or Submit a Request</h2>
+
+    <form action="/action_page.php">
+        Full Name:<br>
+        <input type="text" name="firstname" value="">
+        <br>
+        Phone #:<br>
+        <input type="text" name="phonenumber">
+        <br>
+        Email:<br>
+        <input type="text">
+        <br>
+
+        <h3>Comment:</h3>
+        <textarea rows="4" cols="50">
+
+</textarea>
+
+        <h3>How would you like to be contacted?</h3>
+        <input type="radio" name="phone#" value=""> Phone #<br>
+        <input type="radio" name="email" value=""> Email <br>
+
+        <h3>How did you hear about Super Rutastic?</h3>
+        <select>
+            <option value="Friend/Family">Friend/Family</option>
+            <option value="News">News</option>
+            <option value="Social Media/Online">Social Media/Online</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
 </html>
