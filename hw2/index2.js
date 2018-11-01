@@ -1,7 +1,4 @@
-function myFunction(){
-    return 12;
-  }
-  console.log(12);
-
+function addNumbers(a, b) {
+    return c = a + b;
 }
- 
+console.log(addNumbers(7, 5));
