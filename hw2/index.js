@@ -1,5 +1,4 @@
-function greet (firstName, lastName, superheroName, greeting){
-    return `${greeting} ${firstName} ${lastName} ${superheroName}`
-  }
-  greet('Rusilah', 'Gojali', 'aka Super Rutastic', 'Hi')
-
+function greet(firstName, lastName, nickname, greeting) {
+    return `${greeting} ${firstName} ${lastName} ${nickname}`
+}
+greet('Rusilah', 'Gojali', 'aka Lula', 'Hi')
