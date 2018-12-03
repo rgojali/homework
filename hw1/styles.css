@@ -1,8 +1,8 @@
-body {
-   
-}
+body {}
+
 
 /* Navbar */
+
 .navbar {
     list-style: none;
     padding: 0;
@@ -24,6 +24,7 @@ body {
     background-color: gray;
 }
 
+
 /* Image */
 
 #icon {
@@ -33,23 +34,24 @@ body {
     margin-right: auto;
 }
 
+
 /* Header */
+
 header {
     text-align: center;
 }
 
 p {
     color: greenyellow;
+    margin: 20px;
 }
 
+
 /* Footer */
+
 footer {
     text-align: center;
     padding: 20px 20px;
     background-color: #444;
     color: white;
-}
-
-p {
-    margin: 20px 
 }
