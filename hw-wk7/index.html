@@ -11,30 +11,71 @@
 <body>
     <h1>Higher-order functions - Part 1 of Functional Programming in Javascript</h1>
 
-    <p>
-
+    <ul>
+        <li><strong><i>Higher-Order Functions </i></strong>- functions are values just like strings or numbers function can be assigned to variables or pass into other functions </li><br>
         <ul>
-            <li>Higher-Order Functions - functions are values just like strings or numbers function can be assigned to variables or pass into other functions </li>
-            <ul>
-                <li>What are they good for? <strong>Composition</strong></li>
-                <li>the fact that we can take one function and put it into another function allows us to compose a lot of small functions into bigger functions</li>
-                <li>filter - is a function on the array that accepts another function as its argument which it will use to return a new filter version of the array</li>
-                <li>e.g. var dogs = animals.filter(function(animal) { <br> return animal.species === 'dog'</li>
-                <li>functions that you send into another functions are called <strong>Callback function</strong> because the host function will call back to them</li>
-                <li>filter will loop through each item in the array and for each item it's going to pass it into the callback function and when it does it will expect the callback function to return either true or false toe tell filter whether or not this
-                    item should be in the new array </li>
+            <li>What are they good for? <strong>Composition</strong></li>
+            <li>the fact that we can take one function and put it into another function allows us to compose a lot of small functions into bigger functions</li>
+            <li>filter - is a function on the array that accepts another function as its argument which it will use to return a new filter version of the array</li><br>
+            <li><strong>Filter Example</strong><br> var dogs = animals.filter(function(animal) { <br> return animal.species === 'dog'})</li><br>
+            <li>functions that you send into another functions are called <strong>Callback function</strong> because the host function will call back to them</li><br>
+            <li>filter will loop through each item in the array and for each item it's going to pass it into the callback function and when it does it will expect the callback function to return either true or false to tell filter whether or not this item
+                should be in the new array </li><br>
 
 
-            </ul>
-            <li>You'll write code faster when you're doing functional programming</li>
-            <li>means that you can write software with less bugs and less time</li>
-            <li>filter uses a lot less code then the for loop</li>
-            <li>less code , less logic</li>
-            <li>when we write our software in small simple functions they compose together which allows us to reuse functions all over the place</li>
-            <li>the filter function is just one line of logic</li>
-            <li>the callback function and the filter function merged into eachother</li>
         </ul>
-    </p>
+        <li>You'll write code faster when you're doing functional programming</li>
+        <li>means that you can write software with less bugs and less time</li>
+        <li>filter uses a lot less code then the for loop</li>
+        <li>less code, less logic</li>
+        <li>when we write our software in small simple functions they compose together which allows us to reuse functions all over the place</li>
+        <li>the filter function is just one line of logic</li>
+        <li>the callback function and the filter function merged into eachother</li>
+    </ul>
+
+    <h1>Map - Part 2 of Functional Programming in JavaScript</h1>
+    <ul>
+        <li><strong>Map</strong> is another higher-order function</li>
+        <li>Map will take a callback function. </li>
+        <ul>
+            <li>The callback function will pass each item in the animals array.</li><br>
+            <br>
+            <li>var animals = [<br> { name: 'fluff', species: 'rabbit'},<br> {name: 'ursula', species: 'dog'}<br> ]
+                <br>
+            </li>
+            <li><strong>For-loop example:</strong> <br> var names = []<br> for (var i = 0; i
+                < animals.length; i++) {<br>
+                    names.push(animals[i].name)<br> }
+                    <br> console.log(names)
+            </li><br>
+            <li><strong>Map Example:</strong>
+
+                <br> var name = animals.map(function(animal){<br> return.animal.name })
+                <br> console.log(names)
+            </li><br>
+        </ul>
+        <li>Map will include all items in the array but instead it expects the callback function to return a transformed object that it will put into the new array instead of the original animal. In this case the name (as mentioned above) </li><br>
+        <li>We can use map to create completely new objects</li><br>
+        <ul>
+            <li><strong>Example:</strong>
+                <br> var name = animals.map(function(animal){<br> return.animal.name + ' is a ' + animal.species })
+                <br> console.log(names)
+            </li>
+        </ul><br>
+        <li>Short code means almost always less bugs</li>
+        <li><b>Arrow functions</b> is a new shorter and better syntax for functions in ECMAScript 6.</li><br>
+        <ul>
+            <li>Example: <br><br> var name = animals.map(function(animal) {return.animal.name })<br>
+                <br> var name = animals.map((animal) => animal.name)
+                <ul>
+                    <li>Won't work because its ECMAScript 6 and it's not fully implemented into node and browsers</li>
+                    <li>however, if running updated io.js, you could use the harmony arrow function flag (node --harmony_arrow_functions example.js) </li>
+                </ul>
+            </li>
+        </ul>
+        <li></li>
+    </ul>
+
 
 
 </body>
