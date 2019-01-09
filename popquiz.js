@@ -3,7 +3,7 @@ function findEvenIndex(arr) {
 
     /*Iterating through the array initializing at the index 0 and running through the array 
     until all indexes have been reached.*/
-    for (var i = 1; i < arr.length - 1; i++) {
+    for (var i = 0; i < arr.length; i++) {
 
 
         //Declared two variables set at 0
