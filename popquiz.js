@@ -6,12 +6,13 @@ function findEvenIndex(arr) {
     for (var i = 0; i < arr.length; i++) {
 
 
-        //Declared two variables set at 0
+        //Declared two variables set at 0 because I want to find the sum when the array iterates from either the right or the left array. 
         var rightSum = 0;
         var leftSum = 0;
 
-        //Iterating through the array and finding the sum of the array on the right
+        //I used the variable 'x' to differentiate the for-loop going through the array from the right. 
         for (var x = i + 1; x < arr.length; x++) {
+            //
             rightSum += arr[x];
         }
 
