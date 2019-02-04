@@ -10,7 +10,7 @@ function findEvenIndex(arr) {
         var rightSum = 0;
         var leftSum = 0;
 
-        //this loop iterates through the array from the right and adds the index plus one to go to the next index and grab that number at that index and this goes on until it reaches the array's length. The numbers grabbed will be added up and be stored under rightSum.
+        /*this loop iterates through the array from the right and adds the index plus one to go to the next index and grab that number at that index and this goes on until it reaches the array's length. The numbers grabbed will be added up and be stored under rightSum.*/
         for (var x = i + 1; x < arr.length; x++) {
             rightSum += arr[x]
         }
