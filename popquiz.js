@@ -10,15 +10,15 @@ function findEvenIndex(arr) {
         var rightSum = 0;
         var leftSum = 0;
 
-        //I used the variable 'x' to differentiate the for-loop going through the array from the right. 
+        //this loop iterates through the array from the right and adds the index plus one to go to the next index and grab that number at that index and this goes on until it reaches the array's length. The numbers grabbed will be added up and be stored under rightSum.
         for (var x = i + 1; x < arr.length; x++) {
-            //
-            rightSum += arr[x];
+            rightSum += arr[x]
         }
 
-        //Iterating through the array and finding the sum of the array on the left
+        //Iterating through the array and finding the sum of the array starting from the left
         for (var y = i - 1; y >= 0; y--) {
             leftSum += arr[y];
+
         }
 
         /*When the left side and right side equals to eachother, it returns the index of where
@@ -32,6 +32,7 @@ function findEvenIndex(arr) {
     return -1
 
 }
+
 
 findEvenIndex([1, 2, 3, 4, 3, 2, 1])
 findEvenIndex([1, 100, 50, -51, 1, 1])
