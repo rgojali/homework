@@ -76,7 +76,11 @@ const Vocab = props => (
             lightweight copy
           </li>
           <li>JSX - is a syntax extension to JavaScript. </li>
-          <li />
+          <li>React elements - are the building blocks of React applications; an element describes what you want to see on the screen. React elements are immutable; elements are not used directly, but get returned from components</li>
+          <li>React components - are small, reusable pieces of code that return a React element to be rendered to the page</li>
+          <li>props -  one of the two types of data that control a component;  inputs to a React component; they are data passed down from a parent component to a child component</li>
+          <li>props.children - is available on every component; it contains the content between the opening and closing tags of a component</li>
+          <li>State - the other type of data that control a component; for data that is going to change, we have to use state.</li>
         </ol>
       </div>
     </div>
